@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="/style/index.css" />
+    <script src="script/validation.js"></script>
+  </head>
+  <body
+    style="background-color: bisque; border: blue; border-width: 10px"
+  >
+    <form name='registration' onSubmit="return formValidation();">
+      <div>
+        <h2>
+          <center><u>Registration Form</u></center>
+          <img
+            src="/image/picture.png"
+            alt="naukari"
+            style="float: right; width: 100px; height: 100px"
+          />
+        </h2>
+        <label class="margin" for="fullname"> Full Name: </label>
+        <input
+          class="textfield"
+          type="text"
+          name="fullname"
+          size="60"
+        /><br /><br />
+        <label class="margin" for="username"> User Name: </label>
+        <input
+          class="textfield"
+          type="text"
+          name="username"
+          size="60"
+        /><br /><br />
+        <label class="margin" > Phone number: </label>
+        <input
+          class="textfield"
+          type="text"
+          name="phonenumber"
+          size="60"
+        /><br /><br />
+        <label class="margin" for="emailid"> Email id: </label>
+        <input
+          class="textfield"
+          type="text"
+          name="emailId"
+          size="60"
+        /><br /><br />
+        <label class="margin"> Nationality : </label>
+        <select class="dropdown">
+          <option value="afghanistan">Afghanistan</option>
+          <option value="bahrain">Bahrain</option>
+          <option value="brazil">Brazil</option>
+          <option value="canada">Canada</option>
+          <option value="france">France</option>
+          <option value="germany">Germany</option>
+          <option value="india">India</option>
+          <option value="kuwait">Kuwait</option>
+          <option value="switzerland">Switzerland</option>
+        </select>
+        <br /><br />
+        <label class="margin"> Date of birth : </label>
+        <input
+          class="textfield"
+          type="date"
+          name="date"
+          value="1990-01-01"
+        /><br /><br />
+        <label class="margin" for="age">Age : </label>
+        <input class="textfield" type="text" name="age" size="60" /><br /><br />
+        <label class="margin"> Gender:</label>
+        <div class="radio">
+          <input type="radio" id="gender" name="gender" value="male" />
+          Male
+          <input type="radio" id="gender" name="gender" value="female" />
+          Female
+        </div>
+        <br /><br />
+        <label for="name" class="margin">Technlogies used: </label>
+        <div class="radio">
+          <input type="checkbox" name="technology" value="java" checked /> Java
+          <input type="checkbox" name="technology" value="sql" /> SQL
+          <input type="checkbox" name="technology" value="python" /> Python
+          <input type="checkbox" name="technology" value="react" /> React
+        </div>
+        <br /><br />
+        <label>Address: </label> <br />
+        <textarea class="textarea" rows="6" cols="50" name="address"> </textarea
+        ><br /><br />
+        <button class="register-button" name="submit" value="submit">Register</button><br /><br />
+        <label>Already registered?</label>
+        <a class="textfield" href="https://www.naukri.com/nlogin/login"
+          >Login
+        </a>
+      </div>
+    </form>
+  </body>
+</html>
